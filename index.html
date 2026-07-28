@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>xatSpace Premium</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- LOADING -->
+
+<div id="loading">
+
+<div class="loader"></div>
+
+<p>Carregando xatSpace...</p>
+
+</div>
+
+
+
+<!-- FUNDO ANIMADO -->
+
+<canvas id="particles"></canvas>
+
+<div class="aurora"></div>
+
+
+
+<!-- GLOW DO MOUSE -->
+
+<div id="mouseGlow"></div>
+
+
+
+
+<!-- RELÓGIO -->
+
+<div class="clock">
+
+<div id="time">
+00:00:00
+</div>
+
+<div id="date">
+Carregando...
+</div>
+
+</div>
+
+
+
+
+<!-- MENU DE TEMAS -->
+
+<div class="theme-panel">
+
+<h3>Themes</h3>
+
+
+<button data-theme="blue">
+🔵 Azul Neon
+</button>
+
+
+<button data-theme="purple">
+🟣 Roxo Neon
+</button>
+
+
+<button data-theme="green">
+🟢 Verde Neon
+</button>
+
+
+<button data-theme="red">
+🔴 Vermelho Neon
+</button>
+
+
+<button data-theme="dark">
+🌑 Dark
+</button>
+
+
+<button data-theme="galaxy">
+🌌 Galaxy
+</button>
+
+
+<button data-theme="rainbow">
+🌈 Rainbow
+</button>
+
+
+
+<h3>⚙ Ajustes</h3>
+
+
+<label>
+Blur
+
+<input 
+type="range"
+id="blur"
+min="5"
+max="40"
+value="20">
+
+</label>
+
+
+<label>
+
+Transparência
+
+<input 
+type="range"
+id="opacity"
+min="10"
+max="90"
+value="30">
+
+</label>
+
+
+</div>
+
+
+
+
+
+<!-- CARD PERFIL -->
+
+<div class="profile-card">
+
+
+
+<div class="avatar-box">
+
+<img src="6963304618102572038_avatar.png" alt="Avatar">
+
+</div>
+
+
+
+<h1>
+Renato Ferreira
+</h1>
+
+
+<h2>
+
+</h2>
+
+
+
+<div class="status">
+
+</div>
+
+
+
+<p class="message">
+
+Bem-vindo ao meu xatSpace
+
+</p>
+
+
+
+
+<div class="info">
+
+
+<div>
+
+<span>Naato</span>
+
+<strong>
+57792309
+</strong>
+
+</div>
+
+
+
+<div>
+
+<span>País</span>
+
+<strong>
+Brasil
+</strong>
+
+</div>
+
+
+
+<div>
+
+<span>Status</span>
+
+<strong>
+Online
+</strong>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="social">
+
+
+<a href="#">
+Discord
+</a>
+
+
+<a href="#">
+Instagram
+</a>
+
+
+<a href="#">
+YouTube
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- PLAYER -->
+
+<div class="music-player">
+
+
+
+<audio id="audio" preload="auto">
+
+<source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+
+
+<button id="play">
+
+▶
+
+</button>
+
+
+
+<button id="pause">
+
+⏸
+
+</button>
+
+
+
+
+<input 
+type="range"
+id="volume"
+min="0"
+max="1"
+step="0.01"
+value="0.3">
+
+
+
+
+
+<div class="equalizer">
+
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- TOAST -->
+
+<div id="toast">
+
+Tema salvo
+
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
